@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/stepanstipl/puppetlabs-inifile.png?branch=master)](https://travis-ci.org/stepanstipl/puppetlabs-inifile)
+[![Build Status](https://travis-ci.org/stepanstipl/puppet-inifile.png?branch=master)](https://travis-ci.org/stepanstipl/puppet-inifile)
 
 *This is fork of Puppetlabs' inifile module, with added features. For now it's only `keep_secret` support.*
 

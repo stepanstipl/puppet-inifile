@@ -1,0 +1,7 @@
+2014-03-15 - Version 0.1.0 
+Summary:
+Changed project URL and name to stepanstipl-inifile, as I don't ever expect some of the changes to go upstream
+
+Features:
+- Changed project name and URL
+- Added keep_secret attribute
