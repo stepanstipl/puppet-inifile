@@ -1,5 +1,5 @@
 name 'stepanstipl-inifile'
-version '1.0.2'
+version '1.0.3'
 source 'git://github.com/stepanstipl/puppet-inifile.git'
 author 'Puppetlabs and Stepan Stipl'
 description 'Resource types for managing settings in INI files'
