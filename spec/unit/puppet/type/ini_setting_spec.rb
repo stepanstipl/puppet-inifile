@@ -39,7 +39,7 @@ describe ini_setting do
       @value.is_to_s('not_secret_at_all').should_not include('not_secret_at_all')
     end
 
-    it "should tell us new value" do
+    it "should tell us md5 of new value, but not value itself" do
       @value.should_to_s('not_secret_at_all').should == '{md5}218fde79f501b8ab8d212f1059bb857f'
       @value.should_to_s('not_secret_at_all').should_not include('not_secret_at_all')
     end
@@ -56,12 +56,12 @@ describe ini_setting do
       @value.change_to_s('not_secret','at_all').should_not include('at_all')
     end
 
-    it "should tell us md5 of current value, but not value itself" do
+    it "should not tell us current value" do
       @value.is_to_s('not_secret_at_all').should == '[redacted sensitive information]'
       @value.is_to_s('not_secret_at_all').should_not include('not_secret_at_all')
     end
 
-    it "should tell us new value" do
+    it "should not tell us new value " do
       @value.should_to_s('not_secret_at_all').should == '[redacted sensitive information]'
       @value.should_to_s('not_secret_at_all').should_not include('not_secret_at_all')
     end
