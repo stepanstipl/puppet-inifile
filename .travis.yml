@@ -2,6 +2,7 @@
 branches:
   only:
     - master
+    - feature-keep_secret
 language: ruby
 bundler_args: --without development
 script: bundle exec rake spec SPEC_OPTS='--format documentation'
